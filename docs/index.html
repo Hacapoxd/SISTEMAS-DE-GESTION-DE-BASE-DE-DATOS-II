@@ -4,108 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sistemas de Gestión de Bases de Datos II</title>
-  <style>
-    :root {
-      --primary-color: #2c3e50;
-      --accent-color: #3498db;
-      --bg-color: #f4f6f8;
-      --card-bg: #ffffff;
-      --text-color: #333;
-      --border-radius: 8px;
-      --transition: all 0.3s ease-in-out;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
-
-    header {
-      background-color: var(--primary-color);
-      padding: 1rem 2rem;
-      color: white;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      background-color: #ecf0f1;
-      padding: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: bold;
-      transition: var(--transition);
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    h1, h2, h3 {
-      color: var(--primary-color);
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 1.2rem;
-    }
-
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    code {
-      background-color: #eee;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -152,6 +51,40 @@
       </ul>
     </section>
 
+    <section id="proyectos" class="card">
+      <h2>🚀 Mis Proyectos</h2>
+      <div class="project-grid">
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250/2c3e50/ffffff?text=Proyecto+1" alt="Vista previa del Proyecto 1">
+          <div class="project-info">
+            <h3>Nombre del Proyecto 1</h3>
+            <p>Breve descripción de lo que hace este proyecto, las tecnologías utilizadas y su propósito principal.</p>
+            <a href="#" class="project-link" target="_blank">Ver Proyecto &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Proyecto+2" alt="Vista previa del Proyecto 2">
+          <div class="project-info">
+            <h3>Nombre del Proyecto 2</h3>
+            <p>Breve descripción de lo que hace este proyecto, las tecnologías utilizadas y su propósito principal.</p>
+            <a href="#" class="project-link" target="_blank">Ver Proyecto &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Proyecto+3" alt="Vista previa del Proyecto 3">
+          <div class="project-info">
+            <h3>Nombre del Proyecto 3</h3>
+            <p>Breve descripción de lo que hace este proyecto, las tecnologías utilizadas y su propósito principal.</p>
+            <a href="#" class="project-link" target="_blank">Ver Proyecto &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="estructura" class="card">
       <h2>📁 Estructura del Repositorio</h2>
       <p>A continuación, se detalla el contenido de cada carpeta:</p>
@@ -162,7 +95,7 @@
       <h3>🧩 ejercicios/</h3>
       <p>Contiene ejercicios semanales resueltos relacionados con consultas SQL complejas, modelamiento relacional, optimización y más.</p>
 
-      <h3 id="proyectos">🏗️ proyectos/</h3>
+      <h3 id="proyectos-futuros">🏗️ proyectos/</h3>
       <p>Próximamente encontrarás aquí los proyectos completos desarrollados durante el curso, con documentación detallada, diagramas y scripts asociados.</p>
 
       <h3>🖥️ presentaciones/</h3>
