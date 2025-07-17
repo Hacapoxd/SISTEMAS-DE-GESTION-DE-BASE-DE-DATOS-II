@@ -38,12 +38,6 @@ Este repositorio tiene como finalidad servir de apoyo académico y documentar el
 
 ---
 
-## 📎 Licencia
-
-Este proyecto está bajo la licencia MIT.  
-👉 Ver archivo [LICENSE](LICENSE) para más información.
-
----
 
 👋 ¡Gracias por visitar!  
 Si estás buscando material sobre bases de datos, ¡espero que este repositorio te sea útil!
