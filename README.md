@@ -81,4 +81,4 @@ Este repositorio tiene como finalidad servir de apoyo académico y documentar el
 Si estás buscando material sobre bases de datos, ¡espero que este repositorio te sea útil!
 
 ---
-https://hacapoxd.github.io/SISTEMAS-DE-GESTION-DE-BASE-DE-DATOS-II/
+- https://hacapoxd.github.io/SISTEMAS-DE-GESTION-DE-BASE-DE-DATOS-II/
