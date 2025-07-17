@@ -5,127 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sistemas de Gestión de Bases de Datos II</title>
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --bg-color: #f4f6f8;
+      --card-bg: #ffffff;
+      --text-color: #333;
+      --border-radius: 8px;
+      --transition: all 0.3s ease-in-out;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #ecf0f1;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
     h1, h2, h3 {
-      color: #2c3e50;
+      color: var(--primary-color);
     }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.2rem;
+    }
+
     a {
-      color: #3498db;
+      color: var(--accent-color);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
+
     code {
       background-color: #eee;
       padding: 2px 6px;
       border-radius: 4px;
       font-family: monospace;
     }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>📚 Sistemas de Gestión de Bases de Datos II</h1>
-  <p><em>Repositorio académico del curso <strong>Sistemas de Gestión de Bases de Datos II</strong>, donde se desarrollan conceptos avanzados de diseño, implementación y optimización de bases de datos.</em></p>
 
-  <div class="section">
-    <h2>👨‍🏫 Docente</h2>
-    <p><strong>Puma Huaman Beto</strong></p>
-  </div>
+  <header>
+    <h1>📚 Sistemas de Gestión de Bases de Datos II</h1>
+    <p><em>Repositorio académico del curso de bases de datos avanzadas</em></p>
+  </header>
 
-  <div class="section">
-    <h2>👨‍🎓 Estudiante</h2>
-    <p><strong>Harrison Capia Tintaya</strong></p>
-  </div>
+  <nav>
+    <a href="#docente">👨‍🏫 Docente</a>
+    <a href="#estudiante">👨‍🎓 Estudiante</a>
+    <a href="#descripcion">📄 Descripción</a>
+    <a href="#tecnologias">🛠️ Tecnologías</a>
+    <a href="#estructura">📁 Estructura</a>
+    <a href="#proyectos">📦 Proyectos</a>
+    <a href="#recursos">📚 Recursos</a>
+  </nav>
 
-  <div class="section">
-    <h2>📁 Descripción</h2>
-    <p>Este repositorio contiene el material académico desarrollado durante el curso, incluyendo ejercicios prácticos, proyectos y documentación relacionada con bases de datos relacionales y no relacionales.</p>
-  </div>
+  <main>
+    <section id="docente" class="card">
+      <h2>👨‍🏫 Docente</h2>
+      <p><strong>Puma Huaman Beto</strong></p>
+    </section>
 
-  <div class="section">
-    <h2>🛠️ Tecnologías y Herramientas</h2>
-    <ul>
-      <li><a href="https://www.postgresql.org/ " target="_blank">PostgreSQL</a></li>
-      <li><a href="https://www.mysql.com/ " target="_blank">MySQL</a></li>
-      <li><a href="https://www.mongodb.com/ " target="_blank">MongoDB</a></li>
-      <li><a href="https://dbeaver.io/ " target="_blank">DBeaver</a></li>
-      <li><a href="https://www.pgadmin.org/ " target="_blank">pgAdmin</a></li>
-      <li><a href="https://github.com/ " target="_blank">Git & GitHub</a></li>
-    </ul>
-  </div>
+    <section id="estudiante" class="card">
+      <h2>👨‍🎓 Estudiante</h2>
+      <p><strong>Harrison Capia Tintaya</strong></p>
+    </section>
 
-  <div class="section">
-    <h2>📁 Estructura del Repositorio</h2>
-    <p>A continuación, se detalla el contenido de cada carpeta:</p>
+    <section id="descripcion" class="card">
+      <h2>📄 Descripción</h2>
+      <p>Este repositorio contiene material académico desarrollado durante el curso, enfocado en conceptos avanzados de gestión de bases de datos relacionales y no relacionales.</p>
+    </section>
 
-    <h3>📄 README.md</h3>
-    <p>Archivo principal que describe el propósito del repositorio, autores, estructura y tecnologías usadas.</p>
+    <section id="tecnologias" class="card">
+      <h2>🛠️ Tecnologías y Herramientas</h2>
+      <ul>
+        <li><a href="https://www.postgresql.org/ " target="_blank">PostgreSQL</a></li>
+        <li><a href="https://www.mysql.com/ " target="_blank">MySQL</a></li>
+        <li><a href="https://www.mongodb.com/ " target="_blank">MongoDB</a></li>
+        <li><a href="https://dbeaver.io/ " target="_blank">DBeaver</a></li>
+        <li><a href="https://www.pgadmin.org/ " target="_blank">pgAdmin</a></li>
+        <li><a href="https://github.com/ " target="_blank">Git & GitHub</a></li>
+      </ul>
+    </section>
 
-    <h3>🧩 ejercicios/</h3>
-    <p>Contiene ejercicios semanales resueltos relacionados con:</p>
-    <ul>
-      <li>Consultas SQL complejas</li>
-      <li>Modelamiento relacional</li>
-      <li>Optimización de base de datos</li>
-      <li>Uso de índices, transacciones y procedimientos almacenados</li>
-    </ul>
+    <section id="estructura" class="card">
+      <h2>📁 Estructura del Repositorio</h2>
+      <p>A continuación, se detalla el contenido de cada carpeta:</p>
 
-    <h3>🏗️ proyectos/</h3>
-    <p>Proyectos completos desarrollados durante el curso. Cada proyecto tiene su propia documentación:</p>
-    <ul>
-      <li>Análisis de requerimientos</li>
-      <li>Diagramas ER y relaciónales</li>
-      <li>Scripts de creación de tablas</li>
-      <li>Consultas y reportes generados</li>
-    </ul>
+      <h3>📄 README.md</h3>
+      <p>Archivo principal que describe el propósito del repositorio, autores, estructura y tecnologías usadas.</p>
 
-    <h3>🖥️ presentaciones/</h3>
-    <p>Material del docente y diapositivas utilizadas en clase:</p>
-    <ul>
-      <li>Temas teóricos</li>
-      <li>Casos prácticos</li>
-      <li>Buenas prácticas en gestión de BDs</li>
-    </ul>
+      <h3>🧩 ejercicios/</h3>
+      <p>Contiene ejercicios semanales resueltos relacionados con consultas SQL complejas, modelamiento relacional, optimización y más.</p>
 
-    <h3>📚 recursos/</h3>
-    <p>Guías adicionales, manuales, artículos y referencias útiles:</p>
-    <ul>
-      <li>Tutoriales de PostgreSQL/MySQL/MongoDB</li>
-      <li>Enlaces a documentación oficial</li>
-      <li>Recomendaciones de lectura</li>
-    </ul>
+      <h3 id="proyectos">🏗️ proyectos/</h3>
+      <p>Próximamente encontrarás aquí los proyectos completos desarrollados durante el curso, con documentación detallada, diagramas y scripts asociados.</p>
 
-    <h3>📄 docs/</h3>
-    <p>Documentación técnica adicional como:</p>
-    <ul>
-      <li>Diagramas de base de datos (en formato <code>.drawio</code>, <code>.png</code>, <code>.pdf</code>)</li>
-      <li>Memorias técnicas</li>
-      <li>Guías de instalación y configuración</li>
-    </ul>
-  </div>
+      <h3>🖥️ presentaciones/</h3>
+      <p>Material del docente y diapositivas utilizadas en clase sobre temas teóricos, casos prácticos y buenas prácticas.</p>
 
-  <div class="section">
-    <h2>📝 Notas Adicionales</h2>
-    <p>Este repositorio tiene como finalidad servir de apoyo académico y documentar el avance durante el curso. Se irá actualizando conforme se avancen en los temas del ciclo.</p>
-  </div>
+      <h3>📚 recursos/</h3>
+      <p>Guías adicionales, manuales, artículos y referencias útiles como tutoriales y documentación oficial.</p>
 
-  <div class="section">
-    <p>👋 ¡Gracias por visitar!</p>
-    <p>Si estás buscando material sobre bases de datos, ¡espero que este repositorio te sea útil!</p>
-  </div>
+      <h3>📄 docs/</h3>
+      <p>Documentación técnica adicional como diagramas, memorias técnicas y guías de instalación y configuración.</p>
+    </section>
+
+    <section id="recursos" class="card">
+      <h2>📝 Notas Adicionales</h2>
+      <p>Este repositorio tiene como finalidad servir de apoyo académico y documentar el avance durante el curso. Se irá actualizando conforme se avancen en los temas del ciclo.</p>
+      <p>👋 ¡Gracias por visitar!</p>
+      <p>Si estás buscando material sobre bases de datos, ¡espero que este repositorio te sea útil!</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Harrison Capia Tintaya - Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
