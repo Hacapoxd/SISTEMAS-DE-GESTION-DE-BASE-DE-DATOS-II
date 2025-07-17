@@ -45,7 +45,7 @@ Contiene ejercicios semanales resueltos relacionados con:
 
 ### 🏗️ proyectos/  
 Proyectos completos desarrollados durante el curso. Cada proyecto tiene su propia documentación:
-- Análisis de requerimientos
+- [`gestion_citas`]([https://github.com/Hacapoxd/Finesi-lp3/tree/main/homeworks/agente_gatos](https://github.com/Hacapoxd/SISTEMAS-DE-GESTION-DE-BASE-DE-DATOS-II/tree/039f0741b968bd4b7c7e5c7d6bc9afe870d93bb7/proyectos/Gestion-citas)) | 
 - Diagramas ER y relaciónales
 - Scripts de creación de tablas
 - Consultas y reportes generados
